@@ -73,7 +73,7 @@ const App = () => {
       <div className='grid'>
         <div className='grid1'>
           <div className='image-choose'>
-            <input type="file" onChange={handleImageChange} />
+            <input type="file" accept="image/png, image/jpeg" onChange={handleImageChange} />
           </div>
           {
             image && (
