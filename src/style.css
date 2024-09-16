@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #010031;
+    padding: 1.5rem;
+    text-align: center;
+    color: #ffffffad;
+
+}
+
+input[type="file"]{
+    color: #ffffffad;
+}
+input[type="file"]::file-selector-button {
+    background-color: #4c5eaf;
+    color: #ffffffad;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+input[type="text"] {
+    height: 28px;
+    width: 80px;
+    font-weight: bold;
+    font-size: 13px;
+    border: 2px solid #210000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: #ffffffad;
+    background-color: #00000047;
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #5d94ff;
+   
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #00000047;
+    border: 1px solid #0000004d;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #504e88;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: end;
+}
+
+label {
+    font-size: 15px;
+    color: #ffffffad;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-area {
+    width: 140px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.grid2 {
+    background-color: #343275;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    background-color: #343275;  
+}
+
+.grid {
+    height: 87%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.image-choose{
+    padding: 1rem;
+    width: 80%;
+    background-color: #010031;
+    height: 14%;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.main{
+    height: 100vh;
+    background-color: #343275;
+}
+.radioGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+.radioButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.radioLabel{
+    margin-left: 8px;
+    font-size: 17px;
+    color:  #ffffffad;;  
+}
+
+input[type='radio']{
+    height: 18px;
+    width: 18px;
+    accent-color:  #504e88;
+}
+.image-preview{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+button {
+    background: #00000047;
+    border: 2px solid #0000004d;
+    font-size: 17px;
+    color:  #ffffffad;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+  }
+  button:hover {
+     background-color: #504e88;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .text-area {
+      width: 165px;
+    }
+    .grid2{
+        padding: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .grid2{
+        padding: 1rem;
+        justify-content: space-evenly;
+    }
+    .box{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 120px;
+    }
+    .image-preview{
+        width: 350px;
+        height: 350px;
+    }
+    .image-choose{
+        padding: 1rem;
+        width: 90%;
+        height: 17%;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    
+  }
+  @media only screen and (max-width: 650px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+   .main{
+       height: 100%;
+       width: 100%;
+   }
+     .grid2{
+        padding: 2rem;
+        justify-content: space-evenly;
+    }
+    button{
+        margin-top: 10px;
+    }
+    .image-preview{
+        width: 400px;
+        height: 400px;
+        margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .image-preview{
+        width: 300px;
+        height: 300px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .image-preview{
+        width: 200px;
+        height: 200px;
+    }
+    
+  }
+  .btn{
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+  }
